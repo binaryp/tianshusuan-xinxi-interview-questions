@@ -3,6 +3,8 @@ name = "interview-questions"
 version = "0.1.0"
 requires-python = "==3.10.*"
 dependencies = [
+    "chompjs>=1.4.1",
+    "parsel>=1.12.1",
     "requests>=2.34.2",
 ]
 
