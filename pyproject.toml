@@ -6,4 +6,29 @@ dependencies = [
     "requests>=2.34.2",
 ]
 
+[dependency-groups]
+dev = [
+    "ruff>=0.17.1",
+    "ty>=0.0.88",
+]
+
+[tool.ruff]
+line-length = 160
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "lf"
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "ANN", "B", "A", "UP", "SIM", "C4", "PTH", "RET", "PIE", "PERF", "RUF", "BLE", "ERA", "PGH"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/__init__.py" = [
+    "F401",
+]
+
 
